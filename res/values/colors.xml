@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<item name="backgroundcolor" type="color">#f8f8f8</item>
+<item name="lightthemecolor" type="color">#32BE76</item>
+<item name="darkthemecolor" type="color">#289885</item>
+<item name="textColor" type="color">#00511b</item>
+
+
+
+</resources>

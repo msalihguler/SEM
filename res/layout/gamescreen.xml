@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="0.64">
+	    
+	    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+         android:background="@drawable/itemborder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+         >
+
+    </com.google.android.gms.maps.MapView>
+
+	    <ImageButton
+	        android:id="@+id/toDirection"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignLeft="@+id/map"
+	        android:layout_alignParentBottom="true"
+	        android:src="@drawable/direction" 
+	        />
+
+	</RelativeLayout>
+
+	<TextView
+	    android:id="@+id/titleInScreen"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="25dp"
+	    android:background="@drawable/itemborder"
+	    android:text="Large Text"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="@color/darkthemecolor" />
+
+    <TextView
+        android:id="@+id/descInScreen"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titleInScreen"
+        android:layout_margin="25dp"
+        android:layout_weight="0.34"
+        android:text="Small Text"
+         android:background="@drawable/itemborder"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightthemecolor" />
+
+   <com.android.volley.toolbox.NetworkImageView 
+       android:layout_height="match_parent" 
+       android:layout_width="match_parent" 
+       android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+         android:background="@drawable/itemborder"
+         android:id="@+id/thumbnailToDownload"/>
+
+    <Button
+        android:id="@+id/startplaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/descInScreen"
+          android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+              android:textColor="#ffffff"
+            android:textStyle="bold"
+        android:text="Start to find the object"
+        android:background="@drawable/buttontype" />
+
+</LinearLayout>
+</ScrollView>

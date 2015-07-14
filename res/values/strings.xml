@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SEM!</string>
+      <string name="drawer_open">DRAVEEEEEEEER!</string>
+          <string name="drawer_close">DRAVEEEEEEEER!</string>
+      
+ <string-array name="gameTypes">
+        <item>Find to See</item>
+        <item>Trekking on the Route</item>
+        
+        </string-array>
+</resources>

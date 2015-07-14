@@ -1,0 +1,15 @@
+<resources>
+    <style name="MyTheme" parent="Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/lightthemecolor</item>
+        <item name="android:titleTextStyle">@style/TitleText</item>
+		<item name="titleTextStyle">@style/TitleText</item>
+    </style>
+    <style name="TitleText" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">18sp</item>
+</style>
+</resources>

@@ -1,0 +1,174 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/border"
+    android:padding="5dp"
+    
+    
+    >
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+      android:padding="5dp">
+
+        
+
+    <LinearLayout 
+       android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:layout_weight="1"
+   	   android:padding="5dp"
+   	   android:background="@drawable/itemborder"
+   	   android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Pick a Category"
+          
+           />
+   	   
+   	   <Spinner
+    	android:id="@+id/spinnerGameType"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	 
+    	 />
+        
+        
+    </LinearLayout>
+       <LinearLayout 
+       android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:layout_weight="1"
+   	   android:padding="5dp"
+   	
+   	   android:orientation="vertical">
+           <ImageButton 
+            android:id="@+id/toMap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imagebuttonborder"
+            />
+           
+           
+       </LinearLayout>
+       		  <LinearLayout 
+       android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:layout_weight="1"
+   	   android:padding="5dp"
+   	
+   	   android:orientation="vertical">
+		 <TextView
+           android:id="@+id/title1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Coordinates: "
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+       <TextView
+           android:id="@+id/coordinatesWritten"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Large Text"
+        android:textSize="13dp" />
+       </LinearLayout>
+			  <LinearLayout 
+       android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:layout_weight="1"
+   	   android:padding="5dp"
+   	
+   	   android:orientation="vertical">
+            
+ 		 <EditText
+ 		     android:id="@+id/editText1"
+ 		     android:layout_width="fill_parent"
+ 		     android:layout_height="fill_parent"
+ 		     android:layout_weight="1"
+ 		     android:ems="10"
+ 		     android:background="@drawable/itemborder"
+ 		     android:hint="Title here..." >
+
+ 		     <requestFocus />
+ 		 </EditText>
+        </LinearLayout>
+   		<LinearLayout 
+       android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:layout_weight="1"
+   	   android:padding="5dp"
+   	
+   	   android:orientation="vertical">
+
+      <EditText
+        android:id="@+id/editText2"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="top|left"
+           android:hint="Explanation here..." 
+        android:background="@drawable/itemborder"
+        android:inputType="textMultiLine" />
+
+
+
+     
+ 		
+        </LinearLayout>
+    		  <LinearLayout 
+        android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:padding="5dp"
+   	 android:orientation="vertical" >
+    		      
+    		            <Button
+          android:id="@+id/pickPhotoType"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Pick a Photo" 
+                    android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+              android:textColor="#ffffff"
+            android:textStyle="bold"
+             android:background="@drawable/buttontype" />
+    		  </LinearLayout>
+    		  	  <LinearLayout 
+        android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:padding="5dp"
+   	 android:orientation="vertical" >
+    		      
+      <ImageView
+          android:id="@+id/imagePreview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+    		  </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+   	   android:layout_height="fill_parent"
+   	   android:padding="5dp"
+   	 android:orientation="vertical" >
+           <Button
+    		          android:id="@+id/uploadToServer"
+    		          android:layout_width="match_parent"
+    		          android:layout_height="wrap_content"
+    		          android:text="Upload" 
+    		                    android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+              android:textColor="#ffffff"
+            android:textStyle="bold"
+             android:background="@drawable/buttontype" />
+    </LinearLayout>
+  </LinearLayout>
+     
+</ScrollView>
